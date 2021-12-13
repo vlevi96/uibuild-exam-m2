@@ -65,7 +65,7 @@ form
 
 h1 
 {
-    font-family: 'EB Garamond', serif;
+    font-family: "EB Garamond", serif;
     font-size: 48px;
     color: #467745;
     align-self:center;
@@ -152,7 +152,7 @@ div#root div label a
 
 button
 {
-    font-family: 'EB Garamond', serif;
+    font-family: "EB Garamond", serif;
     font-size: 21px;
     color: #F7E4D4;
     letter-spacing: 0.2em;
