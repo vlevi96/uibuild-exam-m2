@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+  
+    background: transparent;
+  
+    font-family: inherit;
+    
+    text-decoration: none;
+}
+  
+ol, ul, li {
+    list-style:none;
+    display:block;
+}
+  
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+  
+a img {
+    border: none
+}
+  
+button, a {
+    cursor: pointer;
+    color: inherit
+}
+  
+textarea {
+    resize: none
+}
+  
+button, input, textarea, select {
+    appearance: none !important;
+	-webkit-appearance: none !important;
+    border-radius: 0
+}
+
+div#root
+{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100vw;
+	height: 100vh;
+
+    background-color: #F7E4D4;
+}
+
+form
+{
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+    width: 100vw;
+}
+
+h1 
+{
+    font-family: "EB Garamond";
+    font-size: 48px;
+    color: #467745;
+    align-self:center;
+
+    margin-bottom: 20px;
+}
+
+input[type=text]
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #467745;
+
+    width: 100%;
+    max-width: 480px;
+    height: 64px;
+    
+    margin-bottom: 20px;
+    
+    background-color: white;
+
+    padding:20px;
+}
+
+
+textarea
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+	font-size: 16px;
+    color: #467745;
+    
+    padding:20px;
+
+    width: 100%;
+    max-width: 480px;
+    height: 120px;
+    background-color: white;
+
+    margin-bottom: 20px;
+}
+
+
+div#root div
+{
+    display: flex;
+	align-items: center;
+    width: 100%;
+    max-width: 480px;
+    align-self: center;
+}
+
+div#root div input[type=checkbox]
+{
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+
+    margin-right: 10px;
+
+    background-color: white;
+}
+
+
+div#root div label
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    
+    width: fit-content;
+
+    color: #467745;
+    text-align:justify;
+
+    overflow-wrap: normal;
+}
+
+div#root div label a
+{
+    text-decoration: underline;
+}
+
+button
+{
+    font-family: "EB Garamond";
+    font-size: 21px;
+    color: #F7E4D4;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+
+    width: 100%;
+    max-width: 280px;
+    height: 80px;
+
+    margin-top: 40px;
+
+    background-color: #467745;
+
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+@media (max-width: 519px) {
+    h1 {
+        font-size: 36px;
+        margin-left: 20px;
+        align-self: flex-start;
+    }
+    input[type=text]
+    {
+        width: calc(100% - 40px);
+    }
+    textarea
+    {
+        width: calc(100% - 40px);
+    }
+    div#root div
+    {
+        width: calc(100% - 40px);
+    }
+}
